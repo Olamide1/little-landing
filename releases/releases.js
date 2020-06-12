@@ -8,7 +8,7 @@ try {
 } catch (e) {}
 
 window.addEventListener('DOMContentLoaded', function (event) {
-  fetch('https://api.github.com/repos/minbrowser/min/releases').then(response => response.json())
+  fetch('https://api.github.com/repos/Olamide1/little/releases').then(response => response.json())
    .then(function (releases) {
      var container = document.getElementById('releases')
      releases

@@ -5,9 +5,9 @@ function showMacDialog () {
 
   var dialog = document.createElement('div')
   dialog.className = 'dialog centered'
-  dialog.innerHTML = '<h1>How to install Min</h1>\
+  dialog.innerHTML = '<h1>How to install Little</h1>\
   <ul>\
-    <li>Drag Min from your Downloads folder to the Applications folder.</li>\
+    <li>Drag Little from your Downloads folder to the Applications folder.</li>\
     <li>Right click on Min.</li>\
     <li>Choose "Open".</li>\
     <li>If a warning dialog is shown, choose "Open".</li>\
@@ -52,13 +52,13 @@ function showLinuxDialog (downloadLinks) {
   document.body.appendChild(dialog)
 }
 
-/* check if Min is available for the user's computer */
+/* check if Little is available for the user's computer */
 
 var failMessage = "Little isn't supported on your OS"
 
 // matches against navigator.platform
 var platformMatchStrings = {
-  'MacIntel': 'https://github.com/minbrowser/min/releases/download/v1.14.1/Min-v1.14.1-darwin-x64.zip',
+  'MacIntel': 'https://github.com/Olamide1/little/releases/download/v1.0.0/Min-v1.14.1-darwin-x64.zip',
   // electron no longer supports 32-bit linux (https://electronjs.org/blog/linux-32bit-support), so there's only a 64-bit build available
   'Linux aarch64': 'https://github.com/minbrowser/min/releases/download/v1.14.1/min_1.14.1_armhf.deb',
   // this could be either 32- or 64- bit, but we only have 64-bit downloads, so just display that and hope it works
