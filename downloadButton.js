@@ -58,7 +58,7 @@ var failMessage = "Little isn't supported on your OS"
 
 // matches against navigator.platform
 var platformMatchStrings = {
-  'MacIntel': 'https://github.com/Olamide1/little/releases/download/v1.0.0/Little-v1.0.0-darwin-x64.zip',
+  'MacIntel': 'https://drive.google.com/uc?export=download&id=1uEHhEVBvddQxHbhD3Ko7zLhKR69BAPI7',
   // electron no longer supports 32-bit linux (https://electronjs.org/blog/linux-32bit-support), so there's only a 64-bit build available
   'Linux aarch64': null,
   // this could be either 32- or 64- bit, but we only have 64-bit downloads, so just display that and hope it works
@@ -71,10 +71,10 @@ var platformMatchStrings = {
 
 // matches against navigator.userAgent
 var UAMatchStrings = {
-  'Win64': 'https://github.com/Olamide1/little/releases/download/v1.0.0/Little.exe',
-  'WOW64': 'https://github.com/Olamide1/little/releases/download/v1.0.0/Little.exe',
+  'Win64': 'https://drive.google.com/uc?export=download&id=13PL-Rx4Ny26Tl5kBq9R2wnLvsWBkiVKi',
+  'WOW64': 'https://drive.google.com/uc?export=download&id=13PL-Rx4Ny26Tl5kBq9R2wnLvsWBkiVKi',
   // neither of the 64-bit strings matched, fall back to 32-bit
-  'Windows NT': 'https://github.com/minbrowser/min/releases/download/v1.0.0/Little-v0.1.0-win32-ia32.zip'
+  'Windows NT': 'https://drive.google.com/uc?export=download&id=1SS3ZLh7siRQqLZX8GeAN6mKednoFp9Nj'
 }
 
 function getDownloadLink () {
